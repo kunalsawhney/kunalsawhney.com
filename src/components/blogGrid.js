@@ -16,7 +16,8 @@ const useStyles = makeStyles({
         paddingRight: "50px"
     },
     root: {
-        minWidth: 200
+        minWidth: 200,
+        marginBottom: 15,
     },
     bullet: {
         display: "inline-block",
@@ -81,8 +82,7 @@ const BlogGrid = () => {
     const classes = useStyles();
 
     const gridContent = blogData.map((blogObject) => (
-        <Grid item xs={12} sm={6} md={6}>
-            {/* <OutlinedCard /> */}
+        <Grid item xs={12}>
             <Card className={classes.root} raised="true">
                 <CardContent>
                     <Typography
@@ -122,13 +122,13 @@ const BlogGrid = () => {
                         className={classes.gridContainer}
                         justify="center"
                     >
+                    <Grid item xs={12} sm={12} md={12}>
+                        <div className="blog-header">BLOG</div>
+                    </Grid>
 
                 <div className="blog-grid-box">
-                    <Grid item xs={12} sm={12} md={6}>
+                    <Grid item xs={12} sm={12} md={12}>
                         {gridContent}
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={6}>
-                        <div className="blog-header">BLOG</div>
                     </Grid>
                 </div>
                 </Grid>

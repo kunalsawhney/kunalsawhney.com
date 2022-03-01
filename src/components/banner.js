@@ -46,7 +46,7 @@ const Banner = () => {
                 <div className="row">
                     <div className="main-text">
                       <Fade left cascade>
-                        Hi, I am Kunal
+                        Hi!<br/> I am Kunal
                       </Fade>
                     </div>
                     {/* <div className="side-image left">

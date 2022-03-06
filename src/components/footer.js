@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="featured-companies">
-        <div className="container">
+        {/* <div className="container">
           <ul>
             {featured.map(({ name, image }) => (
               <li key="name">
@@ -30,7 +30,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="footer">
         <div className="inner">

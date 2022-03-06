@@ -16,8 +16,8 @@ const IndexPage = () => (
     <Header />
     <Banner />
     <AboutBlurb />
-    <BlogGrid />
-    <ContactForm />
+    {/* <BlogGrid /> */}
+    {/* <ContactForm /> */}
     <Footer />
   </div>
 )
